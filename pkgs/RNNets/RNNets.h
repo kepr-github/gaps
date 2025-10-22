@@ -4,7 +4,14 @@
 
 
 
-/* Dependency include files */
+
+=======
+// Tell IWYU to allow indirect access to these declaration and includes 
+// IWYU pragma: begin_exports
+
+
+
+
 
 #include "RNBasics/RNBasics.h"
 
@@ -61,7 +68,11 @@ void RNStopNets();
 }
 
 
-#endif
+=======
+
+// IWYU pragma: end_exports
+
+
 
 
 

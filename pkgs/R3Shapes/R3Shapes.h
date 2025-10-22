@@ -4,6 +4,11 @@
 
 
 
+// Tell IWYU to allow indirect access to these declaration and includes 
+// IWYU pragma: begin_exports
+
+
+
 /* Dependency include files */
 
 #include "R2Shapes/R2Shapes.h"
@@ -40,6 +45,7 @@ class R3TriangleArray;
 class R3Circle;
 class R3Ellipse;
 class R3Rectangle;
+class R3Polygon;
 class R3Mesh;
 class R3Curve;
 class R3Polyline;
@@ -100,6 +106,7 @@ class R3Grid;
 #include "R3Circle.h"
 #include "R3Ellipse.h"
 #include "R3Rectangle.h"
+#include "R3Polygon.h"
 #include "R3Mesh.h"
 #include "R3PlanarGrid.h"        
 
@@ -163,6 +170,10 @@ namespace gaps {
 int R3InitShapes(void);
 void R3StopShapes(void);
 }
+
+
+
+// IWYU pragma: end_exports
 
 
 
